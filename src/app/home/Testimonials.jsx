@@ -5,10 +5,18 @@ import { testimonial } from "@/lib/testimonial";
 import { Quote } from "lucide-react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode} from 'swiper/modules';
+import { FreeMode } from "swiper/modules";
 function Testimonials() {
 	return (
 		<SectionContainer title={"Testimonials"}>
+			<div className="flex flex-col items-center mb-3">
+				<p className="text-sm w-4/6 text-center">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Minus ipsam odio nisi, itaque distinctio molestias soluta
+					voluptas culpa maiores a iure dicta animi, assumenda
+					cupiditate.
+				</p>
+			</div>
 			<Swiper
 				freeMode={true}
 				slidesPerView={"auto"}

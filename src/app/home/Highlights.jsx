@@ -7,7 +7,7 @@ function Highlights() {
 	return (
 		<SectionContainer title={"Highlights"}>
 			<div className="flex flex-col items-center">
-				<p className="text-sm w-100 text-center">
+				<p className="text-sm w-4/6 text-center">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Minus ipsam odio nisi, itaque distinctio molestias soluta
 					voluptas culpa maiores a iure dicta animi, assumenda
@@ -18,20 +18,23 @@ function Highlights() {
 			<div className="flex justify-center gap-6 mt-12">
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
-					transition={{ duration: 1.5 }}
-					animate={{ opacity: 1, y: 25 }}>
+					transition={{ duration: 1, delay: 0.2 }}
+					whileInView={{ opacity: 1, y: 25 }}
+					viewport={{ once: true }}>
 					<HiglightCard />
 				</motion.div>
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
-					transition={{ duration: 1.5 }}
-					animate={{ opacity: 1, y: -25 }}>
+					transition={{ duration: 1, delay: 0.2 }}
+					whileInView={{ opacity: 1, y: -25 }}
+					viewport={{ once: true }}>
 					<HiglightCard />
 				</motion.div>
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
-					transition={{ duration: 1.5 }}
-					animate={{ opacity: 1, y: 25 }}>
+					transition={{ duration: 1, delay: 0.2 }}
+					whileInView={{ opacity: 1, y: 25 }}
+					viewport={{ once: true }}>
 					<HiglightCard />
 				</motion.div>
 			</div>
