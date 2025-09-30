@@ -5,12 +5,17 @@ import { testimonial } from "@/lib/testimonial";
 import { Quote } from "lucide-react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode} from 'swiper/modules';
 function Testimonials() {
 	return (
 		<SectionContainer title={"Testimonials"}>
-			<Swiper freeMode={true}>
+			<Swiper
+				freeMode={true}
+				slidesPerView={"auto"}
+				grabCursor={true}
+				modules={[FreeMode]}>
 				{testimonial?.map((test, i) => (
-					<SwiperSlide className=" !w-68 pt-15 pb-10 mr-15" key={i}>
+					<SwiperSlide className="!w-68 pt-15 pb-10 mx-7" key={i}>
 						<div className=" h-86 bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center relative">
 							<Image
 								src="/avatar.png"

@@ -1,12 +1,42 @@
-import SectionContainer from '@/components/ui/SectionContainer'
-import React from 'react'
+import HiglightCard from "@/components/ui/HiglightCard";
+import SectionContainer from "@/components/ui/SectionContainer";
+import React from "react";
+import * as motion from "motion/react-client";
 
 function Highlights() {
-  return (
-    <SectionContainer title={"Highlights"}>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id soluta tenetur, magnam incidunt sapiente ex veritatis repudiandae exercitationem commodi labore illum cum modi consectetur ullam inventore iusto odit quisquam. Asperiores inventore molestiae soluta ex placeat dolorum itaque, quasi dignissimos reiciendis magni quo eligendi expedita est tenetur ullam quam temporibus vero. Quibusdam quas, et quidem odit nemo repellendus nulla tempore aliquid beatae accusamus voluptatum qui, cum debitis minus nesciunt quo, dolorum labore! Odio, nemo asperiores tempore exercitationem totam necessitatibus temporibus perspiciatis impedit non perferendis optio laboriosam consequatur quam ab libero, ipsam beatae deserunt cumque excepturi sed, corrupti sit ducimus molestiae! Architecto!
-    </SectionContainer>
-  )
+	return (
+		<SectionContainer title={"Highlights"}>
+			<div className="flex flex-col items-center">
+				<p className="text-sm w-100 text-center">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Minus ipsam odio nisi, itaque distinctio molestias soluta
+					voluptas culpa maiores a iure dicta animi, assumenda
+					cupiditate.
+				</p>
+			</div>
+
+			<div className="flex justify-center gap-6 mt-12">
+				<motion.div
+					initial={{ opacity: 0, y: 50 }}
+					transition={{ duration: 1.5 }}
+					animate={{ opacity: 1, y: 25 }}>
+					<HiglightCard />
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0, y: 50 }}
+					transition={{ duration: 1.5 }}
+					animate={{ opacity: 1, y: -25 }}>
+					<HiglightCard />
+				</motion.div>
+				<motion.div
+					initial={{ opacity: 0, y: 50 }}
+					transition={{ duration: 1.5 }}
+					animate={{ opacity: 1, y: 25 }}>
+					<HiglightCard />
+				</motion.div>
+			</div>
+		</SectionContainer>
+	);
 }
 
-export default Highlights
+export default Highlights;

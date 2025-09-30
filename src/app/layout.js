@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Poppins, Patrick_Hand } from "next/font/google";
 import "./globals.css";
 import "swiper/css";
+import "swiper/css/free-mode";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import SplashScreen from "@/components/common/Splash";

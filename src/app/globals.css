@@ -19,7 +19,7 @@
 @custom-variant sm (@media (max-width: 639px));
 
 :root {
-	--color-wh: #e5e5e5;
+	--color-wh: #f5f4f4;
 	--color-bk: #0e1111;
 }
 /* custom colors */
@@ -75,7 +75,7 @@ body {
 .highlight-heading {
 	position: relative;
 	display: inline-block;
-	font-size: var(--text-xxl);
+	font-size: var(--text-xl);
 	z-index: 1;
 }
 
@@ -87,7 +87,7 @@ body {
 	left: -10px;
 	right: -10px;
 	height: 55%;
-	background: #cac5f7;
+	background: rgba(91, 147, 231, 0.404);
 	z-index: -1;
 	border-radius: 40% 60% 50% 50% / 50% 40% 60% 50%;
 }

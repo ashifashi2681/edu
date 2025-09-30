@@ -6,7 +6,7 @@ function SectionContainer({ children, title, bg }) {
 			<div className="container">
 				{title && (
 					<div className="text-center">
-						<h2 className="highlight-heading font-patric-hand ">
+						<h2 className="highlight-heading font-[600] ">
 							{title}
 						</h2>
 					</div>
