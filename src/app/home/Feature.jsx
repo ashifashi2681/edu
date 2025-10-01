@@ -11,6 +11,7 @@ function Feature({title, para, img, rtl=false}) {
 						src={img}
 						alt={title}
 						width={500}
+                        loading='lazy'
 						height={500}
 						className="w-full h-full object-cover rounded-2xl"
 					/>

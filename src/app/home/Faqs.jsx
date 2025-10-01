@@ -14,6 +14,7 @@ function Faqs() {
 						alt="faq"
 						fill
 						className="object-cover"
+						loading="lazy"
 					/>
 				</div>
 

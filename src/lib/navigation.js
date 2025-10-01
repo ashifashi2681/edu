@@ -49,7 +49,7 @@ export const navData = [
 	},
 	{
 		label: "Contact us",
-		path: "/contact",
+		path: "/contact-us",
 		sub: [],
 	},
 ];

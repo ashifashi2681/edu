@@ -5,8 +5,12 @@ import Hero from "./home/Hero";
 import Highlights from "./home/Highlights";
 import Testimonials from "./home/Testimonials";
 
+
+export const metadata = {
+	title: "EduStaq | Home",
+	description: "knowledg at your fingertips",
+};
 export default function Home() {
-	console.log(featrues);
 	return (
 		<div>
 			<Hero />
