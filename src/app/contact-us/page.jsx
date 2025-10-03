@@ -1,3 +1,4 @@
+import SectionContainer from '@/components/ui/SectionContainer';
 import React from 'react'
 
 
@@ -7,7 +8,9 @@ export const metadata = {
 };
 function page() {
   return (
-    <div>page</div>
+    <SectionContainer>
+        
+    </SectionContainer>
   )
 }
 

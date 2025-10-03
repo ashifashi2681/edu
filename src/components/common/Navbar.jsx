@@ -5,10 +5,13 @@ import NavItem from "../ui/NavItem";
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import MenuButton from "../ui/MenuButton";
 
 function Navbar() {
+
 	return (
-		<header className="container py-3 flex items-center justify-between ">
+		<header className="container py-3 flex items-center justify-between">
+			<MenuButton data={navData} />
 			<div className="border px-5">
 				<Link href={"/"}>
 					<Image
@@ -19,11 +22,11 @@ function Navbar() {
 					/>
 				</Link>
 			</div>
-			<nav>
-				<ul className="flex gap-3">
-					{navData?.map((nav, i) => (
-						<NavItem data={nav} key={i} />
-					))}
+			<nav className="md:hidden">
+				<ul className="flex space-x-10">
+					
+						<NavItem data={navData}/>
+			
 				</ul>
 			</nav>
 			<CustomButton className={"flex items-center gap-2"}>

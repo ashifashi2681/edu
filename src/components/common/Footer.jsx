@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import CustomButton from "../ui/CustomButton";
-import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Send, Youtube } from "lucide-react";
 
 function Footer() {
 	return (
 		<footer className="w-full bg-bk text-[#bbbbbb] py-16">
-			<div className="container grid grid-cols-4 gap-2">
+			<div className="container grid grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 lg:gap-4">
 				<section className="">
 					<div className="border border-white w-fit mb-6">
 						<Image
@@ -29,8 +29,8 @@ function Footer() {
 						<p className="text-sm my-2">phone</p>
 					</address>
 				</section>
-				<section className="">
-					<h6 className="text-base font-[600] text-wh mb-6">
+				<section className="sm:mt-6">
+					<h6 className="text-base font-[600] text-wh mb-6 lg:mb-5">
 						Courses
 					</h6>
 					<nav aria-label="Footer Navigation">
@@ -47,8 +47,8 @@ function Footer() {
 						</ul>
 					</nav>
 				</section>
-				<section className="">
-					<h6 className="text-base font-[600] text-wh mb-6">
+				<section className="md:mt-6">
+					<h6 className="text-base font-[600] text-wh mb-6 lg:mb-5">
 						Career
 					</h6>
 					<nav aria-label="Footer Navigation">
@@ -65,8 +65,8 @@ function Footer() {
 						</ul>
 					</nav>
 				</section>
-				<section>
-					<h6 className="text-base font-[600] text-wh mb-6">
+				<section className="lg:mt-6">
+					<h6 className="text-base font-[600] text-wh mb-6 lg:mb-5">
 						Connect Us
 					</h6>
 					<p className="text-sm mb-2">
@@ -77,10 +77,10 @@ function Footer() {
 						<input
 							type="text"
 							placeholder="Email"
-							className="px-3 py-2 rounded-sm bg-wh text-bk outline-none border-none text-sm"
+							className="px-3 py-2 rounded-sm bg-wh text-bk outline-none border-none text-sm w-full"
 						/>
-						<CustomButton className={"rounded-sm"}>
-							Connect
+						<CustomButton className={"rounded-sm !px-2"}>
+							<Send size={22} />
 						</CustomButton>
 					</div>
 					{/* social media icons */}
@@ -122,7 +122,7 @@ function Footer() {
 					<Link
 						href={li.path}
 						key={i}
-						className="px-6 border-r border-r-gray-700 footer-link text-xs">
+						className="px-6 border-r border-r-gray-700 footer-link text-xs/7">
 						{li.label}
 					</Link>
 				))}

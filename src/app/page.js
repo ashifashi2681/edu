@@ -11,6 +11,7 @@ export const metadata = {
 	description: "knowledg at your fingertips",
 };
 export default function Home() {
+	
 	return (
 		<div>
 			<Hero />
