@@ -2,7 +2,7 @@ import React from "react";
 
 function SectionContainer({ children, title, bg }) {
 	return (
-		<section className={`w-full py-12 ${bg}`}>
+		<section className={`w-full py-12 lg:py-10 md:py-8 sm:py-6 ${bg}`}>
 			<div className="container">
 				{title && (
 					<div className="text-center">
