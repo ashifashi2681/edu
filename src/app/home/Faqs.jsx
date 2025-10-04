@@ -6,9 +6,11 @@ import React from "react";
 
 function Faqs() {
 	return (
-		<SectionContainer title={"Frequently Asked Questions"} bg={"bg-red-100"}>
-			<div className="grid grid-cols-2 gap-4">
-				<div className="w-full h-full flex justify-center relative overflow-hidden rounded-2xl">
+		<SectionContainer
+			title={"Frequently Asked Questions"}
+			bg={"bg-red-100"}>
+			<div className="grid grid-cols-2 md:grid-cols-1 gap-4">
+				<div className="relative w-full h-[400px] flex justify-center  overflow-hidden rounded-2xl md:rounded-lg">
 					<Image
 						src="/faq.png"
 						alt="faq"

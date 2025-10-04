@@ -48,7 +48,8 @@ function NavItem({ data, nested = false }) {
 			{currentMenu?.map((nav, i) => (
 				<motion.li
 				initial={{ opacity: 0, y: -10 }}
-				animate={{ opacity: 1, y: 0 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true }}
 				transition={{ delay: i * 0.1 }}
 				key={i} className="relative">
 					<Link

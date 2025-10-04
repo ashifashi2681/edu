@@ -6,6 +6,7 @@ import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import SplashScreen from "@/components/common/Splash";
 import SmoothScrollLayout from "@/components/common/SmoothScrollLayout";
+import MouseGradient from "@/components/ui/MouseGradient";
 
 // const geistSans = Geist({
 // 	variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
 				<SplashScreen></SplashScreen>
 				<main className="min-h-screen body-b">
 					<Navbar />
+					<MouseGradient/>
 					{children}
 					<Footer />
 				</main>

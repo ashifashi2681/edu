@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 function SplashScreen() {
-	const [showSplash, setShowSplash] = useState(false);
+	const [showSplash, setShowSplash] = useState(true);
 	const [fadeout, setFadeout] = useState(false);
 
 	useEffect(() => {
@@ -12,7 +12,6 @@ function SplashScreen() {
 		if (hasSeenSplash) {
 			setShowSplash(false);
 		} else {
-			setShowSplash(true);
 			setTimeout(() => {
 				setFadeout(true);
 			}, 1500);
