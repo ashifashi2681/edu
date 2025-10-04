@@ -3,8 +3,8 @@ import { motion, useMotionValue, useSpring } from "motion/react";
 import { useEffect } from "react";
 function MouseGradient({
 	size = 400,
-	color1 = "rgba(56, 189, 248, 0.3)", 
-	color2 = "rgba(59, 130, 246, 0.3)", 
+	color1 = "rgba(56, 189, 248, 0.2)", 
+	color2 = "rgba(59, 130, 246, 0.2)", 
 }) {
 	const x = useMotionValue(0);
 	const y = useMotionValue(0);

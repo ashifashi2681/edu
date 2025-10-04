@@ -30,7 +30,7 @@ function Navbar() {
 				</ul>
 			</nav>
 			<CustomButton className={"flex items-center gap-2"}>
-				Join <MoveRight size={16} />
+				Join <MoveRight className="sm:hidden" size={16} />
 			</CustomButton>
 		</header>
 	);

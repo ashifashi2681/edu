@@ -6,43 +6,6 @@ export const navData = [
 		sub: [],
 	},
 	{
-		label: "Courses",
-		path: "/courses",
-		sub: [],
-	},
-	{
-		label: "Services",
-		path: "#",
-		sub: [
-			{
-				label: "Web dev",
-				path: "service/web",
-				sub: [],
-			},
-			{
-				label: "Mob dev",
-				path: "#",
-				sub: [
-					{
-						label: "sub menu",
-						path: "service/flutter",
-						sub: [],
-					},
-					{
-						label: "sub menu",
-						path: "service/react",
-						sub: [],
-					},
-				],
-			},
-		],
-	},
-	{
-		label: "Careers",
-		path: "/careers",
-		sub: [],
-	},
-	{
 		label: "About us",
 		path: "/about-us",
 		sub: [],

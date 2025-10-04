@@ -15,7 +15,7 @@ function Highlights() {
 				</p>
 			</div>
 
-			<div className="flex justify-center gap-6 lg:gap-5 md:gap-4 sm:gap-3 mt-12">
+			<div className="flex justify-center flex-wrap gap-6 lg:gap-5 md:gap-4 sm:gap-3 mt-12">
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
 					transition={{ duration: 1, delay: 0.2 }}
