@@ -24,7 +24,7 @@ function MenuButton({ data }) {
 					animate={{ opacity: 0.5 }}
 					exit={{ opacity: 0 }}
 					onClick={handleClose}
-					className="fixed top-0 left-0 w-full h-full bg-black"></motion.div>
+					className="fixed top-0 left-0 z-10 w-full h-full bg-black"></motion.div>
 			)}
 			<div
 				className={`bg-white shadow-2xl fixed z-50 top-0 bottom-0 left-0 w-5/7 ${
@@ -38,13 +38,14 @@ function MenuButton({ data }) {
 				</motion.button>
 
 				<ul className="mt-13 flex flex-col space-y-3">
-					<NavItem data={data} />
+					<NavItem data={data} setDrawerOpen={setDrawerOpen}/>
 				</ul>
-				<Image 
+				<Image
 					src="/book-imoji.png"
 					width={500}
 					height={500}
 					loading="lazy"
+					alt="book-imoji"
 					className="object-cover absolute bottom-0 left-1/2 -translate-x-1/2 opacity-60"
 				/>
 			</div>

@@ -11,7 +11,6 @@ function Hero() {
 			transition={{ duration: 1.8 }}
 			animate={{ opacity: 1 }}>
 			<SectionContainer>
-				
 				<div className="flex relative">
 					<div className="flex-1/3">
 						<motion.h1
@@ -33,7 +32,7 @@ function Hero() {
 							doloribus molestiae recusandae!
 						</motion.p>
 						<motion.div
-						className='md:flex justify-center'
+							className="md:flex justify-center"
 							initial={{ opacity: 0 }}
 							transition={{ duration: 1.5, delay: 2 }}
 							animate={{ opacity: 1 }}>
@@ -47,10 +46,11 @@ function Hero() {
 						<div className="relative w-full h-[400px] flex justify-center overflow-hidden rounded-xl">
 							<Image
 								src="/hero.png"
-								alt="hero"
+								alt="hero image"
 								fill
 								className="object-cover"
-								loading="lazy"
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+								priority
 							/>
 							<div className="absolute inset-0 bg-gradient-to-r from-wh via-transparent to-transparent"></div>
 						</div>

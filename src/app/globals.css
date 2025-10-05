@@ -109,3 +109,8 @@ body {
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+.join-title {
+	background: radial-gradient(ellipse farthest-corner at center center, #0792ce 0%, #021199 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}

@@ -25,16 +25,19 @@ function SplashScreen() {
 	if (showSplash) {
 		return (
 			<div
-				className={`fixed z-10 inset-0 flex items-center justify-center bg-bl-300 text-white text-3xl font-bold transition-opacity duration-500 ${
+				className={`fixed z-10 inset-0 flex items-center justify-center bg-bl-300 text-white text-3xl font-bold transition-opacity duration-500${
 					fadeout ? "opacity-0" : "opacity-100"
 				}`}>
-				<Image
-					src="/splash.png"
-					alt="logo"
-					width={200}
-					height={200}
-					className="object-contain w-80 h-80"
-				/>
+				<div className="relative w-full h-[300px] md:h-[250px]">
+					<Image
+						src="/splash.png"
+						alt="splash image"
+						fill
+						priority
+						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+						className="object-contain"
+					/>
+				</div>
 			</div>
 		);
 	}

@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import * as motion from "motion/react-client";
 
-function NavItem({ data, nested = false }) {
+function NavItem({ data, nested = false, setDrawerOpen }) {
 	const [isMobile, setIsMobile] = useState(null);
 	const [stack, setStack] = useState([data]);
 
@@ -28,6 +28,8 @@ function NavItem({ data, nested = false }) {
 	const goForward = (nav) => {
 		if (nav?.sub?.length > 0) {
 			setStack((prev) => [...prev, nav?.sub]);
+		} else {
+			isMobile && setDrawerOpen(false);
 		}
 	};
 
@@ -47,11 +49,12 @@ function NavItem({ data, nested = false }) {
 			)}
 			{currentMenu?.map((nav, i) => (
 				<motion.li
-				initial={{ opacity: 0, y: -10 }}
-				whileInView={{ opacity: 1, y: 0 }}
-				viewport={{ once: true }}
-				transition={{ delay: i * 0.1 }}
-				key={i} className="relative">
+					initial={{ opacity: 0, y: -10 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					viewport={{ once: true }}
+					transition={{ delay: i * 0.1 }}
+					key={i}
+					className="relative">
 					<Link
 						onClick={() => {
 							goForward(nav);
