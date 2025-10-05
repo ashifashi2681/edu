@@ -1,4 +1,5 @@
-import React from "react";
+'use client'
+import React, { useState } from "react";
 import CustomButton from "../ui/CustomButton";
 import { navData } from "@/lib/navigation";
 import NavItem from "../ui/NavItem";
@@ -6,9 +7,14 @@ import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import MenuButton from "../ui/MenuButton";
-import RegisterFoamModal from "../foams/RegisterFoamModal";
+import RegisterFormModal from "../foams/RegisterFormModal";
 
 function Navbar() {
+	const [isModalOpen, setIsModalOpen] = useState(false)
+
+	const handleModal = () => {
+		setIsModalOpen(true)
+	}
 	return (
 		<header className="container py-3 flex items-center justify-between">
 			<MenuButton data={navData} />
@@ -30,10 +36,12 @@ function Navbar() {
 					<NavItem data={navData} />
 				</ul>
 			</nav>
-			<CustomButton className={"flex items-center gap-2"}>
+			<CustomButton
+				onClick={handleModal}
+				className={"flex items-center gap-2"}>
 				Join <MoveRight className="sm:hidden" size={16} />
 			</CustomButton>
-			<RegisterFoamModal />
+			<RegisterFormModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
 		</header>
 	);
 }

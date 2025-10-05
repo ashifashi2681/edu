@@ -1,25 +1,40 @@
+"use client";
 import React from "react";
-import * as motion from 'motion/react-client'
+import * as motion from "motion/react-client";
 import CustomInput from "../ui/CustomInput";
 import CustomButton from "../ui/CustomButton";
+import { X } from "lucide-react";
 
-function RegisterFoamModal() {
+function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 	return (
 		<>
-			<div className="fixed inset-0 bg-black opacity-50 z-10"></div>
-			<div className="fixed z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  p-5 flex sm:flex-col items-center justify-center w-full h-full">
-
-
-			
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 0.5 }}
+				exit={{ opacity: 0 }}
+				className={`fixed inset-0 bg-black z-10 ${
+					isModalOpen ? "block" : "hidden"
+				}`}></motion.div>
+			<div
+				className={`fixed z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  p-5  sm:flex-col items-center justify-center w-full h-full ${
+					isModalOpen ? "flex" : "hidden"
+				}`}>
+				{/* form div */}
 				<motion.div
 					initial={{ opacity: 0, translateX: -20 }}
 					transition={{ duration: 0.5 }}
-					animate={{ opacity: 1, translateX: 0 }}
-					className="bg-white w-3/6 lg:w-4/6 md:w-5/6 sm:w-full h-fit shadow-2xl rounded-2xl sm:rounded-md z-10 p-10 md:p-7 sm:p-3">
+					whileInView={{ opacity: 1, translateX: 0 }}
+
+					className="relative bg-white w-3/6 lg:w-4/6 md:w-5/6 sm:w-full h-fit shadow-2xl rounded-2xl sm:rounded-md z-10 p-10 md:p-7 sm:px-3 sm:py-6 sm:overflow-y-scroll">
+					<button
+						onClick={() => setIsModalOpen(false)}
+						className="absolute top-3 right-3 bg-blue-100 text-bl-300 p-2 rounded-full">
+						<X size={16} />
+					</button>
 					<h2 className="text-md font-[600] text-center mb-5">
 						Join with us
 					</h2>
-					<div className="grid grid-cols-2 gap-4 sm:grid-cols-1">
+					<div className="grid grid-cols-2 gap-4 sm:gap-3 sm:grid-cols-1">
 						<CustomInput
 							label={"Name"}
 							placeHolder={"Eg. Jhon Doe"}
@@ -56,12 +71,11 @@ function RegisterFoamModal() {
 					</CustomButton>
 				</motion.div>
 
-
-
+				{/* abstract div */}
 				<motion.div
 					initial={{ opacity: 0, translateX: 20 }}
 					transition={{ duration: 0.5 }}
-					animate={{ opacity: 1, translateX: -50 }}
+					whileInView={{ opacity: 1, translateX: -50 }}
 					className="relative w-2/6 lg:w-3/6 md:absolute h-full md:h-5/6 sm:hidden bg-linear-[148deg] from-[#F9E7F7] from-0% via-[#F7A29B] via-50% to-[#6C5BDF] to-100% shadow-2xl rounded-2xl">
 					<motion.div
 						animate={{ x: 50, y: 0 }}
@@ -103,4 +117,4 @@ function RegisterFoamModal() {
 	);
 }
 
-export default RegisterFoamModal;
+export default RegisterFormModal;

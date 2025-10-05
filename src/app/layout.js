@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body
 				className={` ${poppins.variable} ${patric.variable} font-poppins antialiased`}>
-				<SplashScreen></SplashScreen>
+				{/* <SplashScreen></SplashScreen> */}
 				<main className="min-h-screen bg-[#566e6e ">
 					<Navbar />
 					<MouseGradient/>
