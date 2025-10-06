@@ -1,11 +1,38 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import * as motion from "motion/react-client";
 import CustomInput from "../ui/CustomInput";
 import CustomButton from "../ui/CustomButton";
 import { X } from "lucide-react";
 
 function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
+	const [formData, setFormData] = useState({
+		name: "",
+		place: "",
+		email: "",
+		purpose: "",
+		phone: "",
+		whatsapp: "",
+	});
+
+	const handleSubmit = async (e) => {
+		e.preventDefault();
+		const res = await fetch(
+			`https://script.google.com/macros/s/AKfycbznOo0yXw1SOrSlObFe9GLLxe7FkyzFkr0QG22uEMbIlpTjeAJcb3-WGN3LlzAuUJH6/exec?Name=${encodeURIComponent(
+				formData.name
+			)}&Place=${encodeURIComponent(formData.place)}&Email=${
+				formData.email
+			}&Purpose=${encodeURIComponent(
+				formData.purpose
+			)}&Phone=${encodeURIComponent(
+				formData.phone
+			)}&WhatsApp=${encodeURIComponent(formData.whatsapp)}`
+		);
+
+		if (res.ok) {
+			console.log(res);
+		}
+	};
 	return (
 		<>
 			<motion.div
@@ -24,7 +51,6 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 					initial={{ opacity: 0, translateX: -20 }}
 					transition={{ duration: 0.5 }}
 					whileInView={{ opacity: 1, translateX: 0 }}
-
 					className="relative bg-white w-3/6 lg:w-4/6 md:w-5/6 sm:w-full h-fit shadow-2xl rounded-2xl sm:rounded-md z-10 p-10 md:p-7 sm:px-3 sm:py-6 sm:overflow-y-scroll">
 					<button
 						onClick={() => setIsModalOpen(false)}
@@ -34,41 +60,81 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 					<h2 className="text-md font-[600] text-center mb-5">
 						Join with us
 					</h2>
-					<div className="grid grid-cols-2 gap-4 sm:gap-3 sm:grid-cols-1">
+					<form
+						onSubmit={handleSubmit}
+						className="grid grid-cols-2 gap-4 sm:gap-3 sm:grid-cols-1">
 						<CustomInput
 							label={"Name"}
 							placeHolder={"Eg. Jhon Doe"}
 							type={"text"}
+							onChange={(e) => {
+								setFormData({
+									...formData,
+									name: e.target.value,
+								});
+							}}
 						/>
 						<CustomInput
 							label={"Place"}
 							placeHolder={"Eg. Calicut"}
 							type={"text"}
+							onChange={(e) => {
+								setFormData({
+									...formData,
+									place: e.target.value,
+								});
+							}}
 						/>
 						<CustomInput
 							label={"Email"}
 							placeHolder={"Eg. jhon@example.com"}
 							type={"email"}
+							onChange={(e) => {
+								setFormData({
+									...formData,
+									email: e.target.value,
+								});
+							}}
 						/>
 						<CustomInput
 							label={"Purpose"}
 							placeHolder={"Eg. Tution inquiry"}
 							type={"text"}
+							onChange={(e) => {
+								setFormData({
+									...formData,
+									purpose: e.target.value,
+								});
+							}}
 						/>
 						<CustomInput
 							label={"Phone"}
 							placeHolder={"9800000000"}
 							type={"number"}
+							onChange={(e) => {
+								setFormData({
+									...formData,
+									phone: e.target.value,
+								});
+							}}
 						/>
 						<CustomInput
 							label={"WhatsApp"}
 							placeHolder={"9800000000"}
 							type={"number"}
+							onChange={(e) => {
+								setFormData({
+									...formData,
+									whatsapp: e.target.value,
+								});
+							}}
 						/>
-					</div>
-					<CustomButton className={"mt-5 rounded-md w-fit"}>
-						Join
-					</CustomButton>
+						<CustomButton
+							type={"submit"}
+							className={"mt-2 rounded-md w-fit"}>
+							Join
+						</CustomButton>
+					</form>
 				</motion.div>
 
 				{/* abstract div */}

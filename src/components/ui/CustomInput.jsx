@@ -1,6 +1,6 @@
 import React from "react";
 
-function CustomInput({ label, type = "text", placeHolder }) {
+function CustomInput({ label, type = "text", placeHolder, onChange }) {
 	return (
 		<div>
 			<label className="text-xs font-[500] mb-2">{label}</label>
@@ -15,6 +15,7 @@ function CustomInput({ label, type = "text", placeHolder }) {
 					className="bg-[#343c4f1f] py-3 px-2 text-sm w-full rounded-md shadow focus:outline-gray-300 placeholder:text-xs"
 					type={type}
 					placeholder={placeHolder}
+					onChange={onChange}
 				/>
 			)}
 		</div>
