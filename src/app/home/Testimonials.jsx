@@ -1,54 +1,26 @@
-"use client";
 import React from "react";
 import SectionContainer from "@/components/ui/SectionContainer";
-import { testimonial } from "@/lib/testimonial";
-import { Quote } from "lucide-react";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode } from "swiper/modules";
+import TestimonialCurousel from "@/components/TestimonialCurousel";
+import * as motion from "motion/react-client";
 
 function Testimonials() {
 	
 	return (
 		<SectionContainer title={"Testimonials"}>
-			<div
-				className="flex flex-col items-center mb-3">
-				<p
+			<div className="flex flex-col items-center mb-3">
+				<motion.p
+					initial={{ opacity: 0 }}
+					transition={{ duration: 1.5, delay: 0.5 }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true }}
 					className="text-sm w-4/6 text-center">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Minus ipsam odio nisi, itaque distinctio molestias soluta
 					voluptas culpa maiores a iure dicta animi, assumenda
 					cupiditate.
-				</p>
+				</motion.p>
 			</div>
-			<Swiper
-				freeMode={true}
-				slidesPerView={"auto"}
-				grabCursor={true}
-				modules={[FreeMode]}>
-				{testimonial?.map((test, i) => (
-					<SwiperSlide className="!w-68 pt-15 pb-10 mx-7" key={i}>
-						<div className=" h-86 bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center relative">
-							<Image
-								src="/avatar.png"
-								alt="profile"
-								width={100}
-								height={100}
-								className="w-20 h-20 z-80 rounded-full absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2"
-							/>
-
-							<h3 className="text-md font-[600]">{test?.name}</h3>
-							<p className="text-sm text-gray-500">
-								{test?.subject}
-							</p>
-							<Quote className="w-5 h-5 text-cyan-600  rotate-180 my-2" />
-							<p className="text-center text-sm text-gray-400 text-wrap line-clamp-8">
-								{test?.message}
-							</p>
-						</div>
-					</SwiperSlide>
-				))}
-			</Swiper>
+			<TestimonialCurousel />
 		</SectionContainer>
 	);
 }

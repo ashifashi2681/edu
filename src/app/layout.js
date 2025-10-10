@@ -7,6 +7,7 @@ import Footer from "@/components/common/Footer";
 import SplashScreen from "@/components/common/Splash";
 import SmoothScrollLayout from "@/components/common/SmoothScrollLayout";
 import MouseGradient from "@/components/ui/MouseGradient";
+import { Toaster } from "react-hot-toast";
 
 // const geistSans = Geist({
 // 	variable: "--font-geist-sans",
@@ -25,20 +26,20 @@ const poppins = Poppins({
 
 const patric = Patrick_Hand({
 	variable: "--font-patric-hand",
-	subsets: ["latin"],	
+	subsets: ["latin"],
 	weight: ["400"],
-})
-
+});
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body
 				className={` ${poppins.variable} ${patric.variable} font-poppins antialiased`}>
-				{/* <SplashScreen></SplashScreen> */}
+				<Toaster position="top-center" reverseOrder={true} />
+				{/* <SplashScreen /> */}
 				<main className="min-h-screen bg-[#566e6e ">
 					<Navbar />
-					<MouseGradient/>
+					<MouseGradient />
 					{children}
 					<Footer />
 				</main>

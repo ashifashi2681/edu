@@ -10,11 +10,12 @@ function Footer() {
 		<footer className="w-full bg-bk text-[#bbbbbb] py-16">
 			<div className="container grid grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-2 lg:gap-4">
 				<section className="">
-					<div className="border border-white w-fit mb-6">
+					<div className="border px-5 relative w-auto h-[45px]">
 						<Image
 							src={"/logo.png"}
-							width={50}
-							height={10}
+							fill
+							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+							className="object-contain"
 							alt="logo"
 						/>
 					</div>

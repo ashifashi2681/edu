@@ -10,14 +10,14 @@ export const metadata = {
 function AboutUs() {
   return (
 		<SectionContainer>
-			<div className="flex items-start gap-5 md:flex-col-reverse">
+			<div className="flex items-start gap-5 lg:flex-col-reverse">
 				<div className="flex-3 lg:flex-1 flex flex-wrap">
 					<motion.div
 						initial={{ opacity: 0, scale: 0 }}
 						transition={{ duration: 0.6 }}
 						animate={{ opacity: 1, scale: 1 }}
 						whileHover={{ scale: 1.1 }}
-						className="bg-green-300 rounded-2xl m-4 min-w-36 flex-1 h-80"></motion.div>
+						className="bg-green-300 rounded-2xl m-4 w-full min-w-50 flex-1 h-80"></motion.div>
 					<motion.div
 						initial={{ opacity: 0, scale: 0 }}
 						transition={{ duration: 0.6, delay: 0.2 }}
@@ -26,7 +26,7 @@ function AboutUs() {
 							scale: 1.1,
 							transition: { duration: 0.6, delay: 0 },
 						}}
-						className="bg-pink-300 rounded-2xl m-4 min-w-96 flex-1 h-80"></motion.div>
+						className="bg-pink-300 rounded-2xl m-4 w-full min-w-50 flex-2 h-80"></motion.div>
 					<motion.div
 						initial={{ opacity: 0, scale: 0 }}
 						transition={{ duration: 0.6, delay: 0.4 }}
@@ -35,7 +35,7 @@ function AboutUs() {
 							scale: 1.1,
 							transition: { duration: 0.6, delay: 0 },
 						}}
-						className="bg-amber-300 rounded-2xl m-4 min-w-96 flex-1 h-80"></motion.div>
+						className="bg-amber-300 rounded-2xl m-4 w-full min-w-50 flex-2 h-80"></motion.div>
 					<motion.div
 						initial={{ opacity: 0, scale: 0 }}
 						transition={{ duration: 0.6, delay: 0.6 }}
@@ -44,7 +44,7 @@ function AboutUs() {
 							scale: 1.1,
 							transition: { duration: 0.6, delay: 0 },
 						}}
-						className="bg-blue-300 rounded-2xl m-4 min-w-36 flex-1 h-80"></motion.div>
+						className="bg-blue-300 rounded-2xl m-4 w-full min-w-50 flex-1 h-80"></motion.div>
 				</div>
 				<div className="flex-2 lg:flex-1">
 					<motion.p

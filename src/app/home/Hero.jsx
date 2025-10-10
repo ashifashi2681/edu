@@ -4,6 +4,7 @@ import { MoveRight } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react'
 import * as motion from "motion/react-client";
+import RegisterFormWithBtn from '@/components/foams/RegisterFormWithBtn';
 function Hero() {
   return (
 		<motion.div
@@ -36,9 +37,7 @@ function Hero() {
 							initial={{ opacity: 0 }}
 							transition={{ duration: 1.5, delay: 2 }}
 							animate={{ opacity: 1 }}>
-							<CustomButton className={"flex items-center gap-2"}>
-								Join <MoveRight size={16} />
-							</CustomButton>
+							<RegisterFormWithBtn />
 						</motion.div>
 					</div>
 

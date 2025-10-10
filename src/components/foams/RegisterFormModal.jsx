@@ -4,6 +4,7 @@ import * as motion from "motion/react-client";
 import CustomInput from "../ui/CustomInput";
 import CustomButton from "../ui/CustomButton";
 import { X } from "lucide-react";
+import Toast from "@/utils/Toast";
 
 function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 	const [formData, setFormData] = useState({
@@ -15,22 +16,50 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 		whatsapp: "",
 	});
 
+	const [isLoading, setIsLoading] = useState(false);
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		const res = await fetch(
-			`https://script.google.com/macros/s/AKfycbznOo0yXw1SOrSlObFe9GLLxe7FkyzFkr0QG22uEMbIlpTjeAJcb3-WGN3LlzAuUJH6/exec?Name=${encodeURIComponent(
-				formData.name
-			)}&Place=${encodeURIComponent(formData.place)}&Email=${
-				formData.email
-			}&Purpose=${encodeURIComponent(
-				formData.purpose
-			)}&Phone=${encodeURIComponent(
-				formData.phone
-			)}&WhatsApp=${encodeURIComponent(formData.whatsapp)}`
-		);
+		// Toast("hello world", "error");
+		try {
+			setIsLoading(true);
+			const res = await fetch(
+				`https://script.google.com/macros/s/AKfycbwUPzGhpHbfdDmwkyZvVRpLdV50V5U7HKttMHy32V6n7AcUD08wS76b4P4ZUScMmqz2/exec?Name=${encodeURIComponent(
+					formData.name
+				)}&Place=${encodeURIComponent(formData.place)}&Email=${
+					formData.email
+				}&Purpose=${encodeURIComponent(
+					formData.purpose
+				)}&Phone=${encodeURIComponent(
+					formData.phone
+				)}&WhatsApp=${encodeURIComponent(formData.whatsapp)}`
+			);
 
-		if (res.ok) {
-			console.log(res);
+			if (res.ok) {
+				setTimeout(() => {
+					setIsLoading(false);
+				}, 500);
+
+				Toast(
+					"Thank you for your interest! we will get back to you soon",
+					"success"
+				);
+
+				setTimeout(() => {
+					setFormData({
+						name: "",
+						place: "",
+						email: "",
+						purpose: "",
+						phone: "",
+						whatsapp: "",
+					});
+					setIsModalOpen(false);
+				}, 1000);
+			}
+		} catch (err) {
+			setIsLoading(false);
+			Toast(err, "error");
 		}
 	};
 	return (
@@ -64,9 +93,11 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 						onSubmit={handleSubmit}
 						className="grid grid-cols-2 gap-4 sm:gap-3 sm:grid-cols-1">
 						<CustomInput
+							required={true}
 							label={"Name"}
 							placeHolder={"Eg. Jhon Doe"}
 							type={"text"}
+							value={formData.name}
 							onChange={(e) => {
 								setFormData({
 									...formData,
@@ -75,9 +106,11 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 							}}
 						/>
 						<CustomInput
+							required={true}
 							label={"Place"}
 							placeHolder={"Eg. Calicut"}
 							type={"text"}
+							value={formData.place}
 							onChange={(e) => {
 								setFormData({
 									...formData,
@@ -86,9 +119,11 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 							}}
 						/>
 						<CustomInput
+							required={true}
 							label={"Email"}
 							placeHolder={"Eg. jhon@example.com"}
 							type={"email"}
+							value={formData.email}
 							onChange={(e) => {
 								setFormData({
 									...formData,
@@ -97,9 +132,11 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 							}}
 						/>
 						<CustomInput
+							required={true}
 							label={"Purpose"}
 							placeHolder={"Eg. Tution inquiry"}
 							type={"text"}
+							value={formData.purpose}
 							onChange={(e) => {
 								setFormData({
 									...formData,
@@ -108,9 +145,11 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 							}}
 						/>
 						<CustomInput
+							required={true}
 							label={"Phone"}
 							placeHolder={"9800000000"}
 							type={"number"}
+							value={formData.phone}
 							onChange={(e) => {
 								setFormData({
 									...formData,
@@ -119,9 +158,11 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 							}}
 						/>
 						<CustomInput
+							required={true}
 							label={"WhatsApp"}
 							placeHolder={"9800000000"}
 							type={"number"}
+							value={formData.whatsapp}
 							onChange={(e) => {
 								setFormData({
 									...formData,
@@ -130,9 +171,10 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 							}}
 						/>
 						<CustomButton
+							loading={isLoading}
 							type={"submit"}
 							className={"mt-2 rounded-md w-fit"}>
-							Join
+							join
 						</CustomButton>
 					</form>
 				</motion.div>
@@ -150,7 +192,7 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 							repeat: Infinity,
 							repeatType: "reverse",
 						}}
-						class="size-28 rounded-full bg-radial-[at_25%_25%] from-white to-[#F7A29B] to-75% shadow-lg absolute top-3 left-5 opacity-50"></motion.div>
+						className="size-28 rounded-full bg-radial-[at_25%_25%] from-white to-[#F7A29B] to-75% shadow-lg absolute top-3 left-5 opacity-50"></motion.div>
 					<motion.div
 						animate={{ x: 0, y: 50 }}
 						transition={{
@@ -158,7 +200,7 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 							repeat: Infinity,
 							repeatType: "reverse",
 						}}
-						class="size-20 rounded-full bg-radial-[at_25%_25%] from-white to-[#ED7E8F] to-75% shadow-lg absolute top-1/2 left-3/5 opacity-30"></motion.div>
+						className="size-20 rounded-full bg-radial-[at_25%_25%] from-white to-[#ED7E8F] to-75% shadow-lg absolute top-1/2 left-3/5 opacity-30"></motion.div>
 					<motion.div
 						animate={{ x: -50, y: 0 }}
 						transition={{
@@ -166,7 +208,7 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 							repeat: Infinity,
 							repeatType: "reverse",
 						}}
-						class="size-32 rounded-full bg-radial-[at_25%_25%] from-white to-[#6C5BDF] to-75% shadow-lg absolute bottom-3 right-5 opacity-50"></motion.div>
+						className="size-32 rounded-full bg-radial-[at_25%_25%] from-white to-[#6C5BDF] to-75% shadow-lg absolute bottom-3 right-5 opacity-50"></motion.div>
 					<div className="absolute pl-14 pr-3 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full join-title md:hidden">
 						<h2 className="text-xl font-[600] text-center">
 							We welcome you!
