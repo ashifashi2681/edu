@@ -36,15 +36,15 @@ export default function RootLayout({ children }) {
 					{children}
 					<Link
 						href={
-							"https://wa.me/917034890206?text=Hello, I would like to know more about this platform."
+							"https://wa.me/919876543210?text=Hello, I would like to know more about this platform."
 						}
 						target="_blank"
-						className="fixed bottom-20 right-18 lg:right-16 md:right-10 sm:right-5 animate-bounce">
+						className="fixed bottom-20 right-18 lg:right-10 md:right-5 sm:right-0 animate-bounce">
 						<Image
 							src="/WhatsApp.png"
 							alt="whatsapp icon"
-							width={60}
-							height={60}
+							width={120}
+							height={120}
 							loading="lazy"
 						/>
 					</Link>

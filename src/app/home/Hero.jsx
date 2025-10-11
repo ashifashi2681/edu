@@ -1,12 +1,11 @@
-import CustomButton from '@/components/ui/CustomButton';
-import SectionContainer from '@/components/ui/SectionContainer';
-import { MoveRight } from 'lucide-react';
-import Image from 'next/image';
-import React from 'react'
+import SectionContainer from "@/components/ui/SectionContainer";
+import Image from "next/image";
+import React from "react";
 import * as motion from "motion/react-client";
-import RegisterFormWithBtn from '@/components/foams/RegisterFormWithBtn';
+import RegisterFormWithBtn from "@/components/foams/RegisterFormWithBtn";
+import Link from "next/link";
 function Hero() {
-  return (
+	return (
 		<motion.div
 			initial={{ opacity: 0 }}
 			transition={{ duration: 1.8 }}
@@ -33,11 +32,20 @@ function Hero() {
 							doloribus molestiae recusandae!
 						</motion.p>
 						<motion.div
-							className="md:flex justify-center"
+							className="flex md:justify-center space-x-4"
 							initial={{ opacity: 0 }}
 							transition={{ duration: 1.5, delay: 2 }}
 							animate={{ opacity: 1 }}>
 							<RegisterFormWithBtn />
+							<Link href={""} target="_blank">
+								<Image
+									src={"/playstore.png"}
+									alt="get it on playstore"
+									width={207}
+									height={65}
+									className="w-30"
+								/>
+							</Link>
 						</motion.div>
 					</div>
 
@@ -57,7 +65,7 @@ function Hero() {
 				</div>
 			</SectionContainer>
 		</motion.div>
-  );
+	);
 }
 
-export default Hero
+export default Hero;
