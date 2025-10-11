@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
 							"https://wa.me/919876543210?text=Hello, I would like to know more about this platform."
 						}
 						target="_blank"
-						className="fixed bottom-20 right-18 lg:right-10 md:right-5 sm:right-0 animate-bounce">
+						className="fixed z-50 bottom-20 right-18 lg:right-10 md:right-5 sm:right-0 animate-bounce">
 						<Image
 							src="/WhatsApp.png"
 							alt="whatsapp icon"
