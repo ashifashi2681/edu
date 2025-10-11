@@ -8,13 +8,16 @@ function TestimonialCurousel() {
 	return (
 		<Swiper slidesPerView={"auto"} grabCursor={true}>
 			{testimonial?.map((test, i) => (
-				<SwiperSlide className="!w-68 pt-15 pb-10 mx-7 lg:mx-6 md:mx-5 sm:mx-4" key={i}>
+				<SwiperSlide
+					className="!w-68 pt-15 pb-10 mx-7 lg:mx-6 md:mx-5 sm:mx-4"
+					key={i}>
 					<motion.div
-                    initial={{ opacity: 0, scale: 0 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-					viewport={{ once: true }}
-                    transition={{ duration: 0.7, delay: i * 0.2 }}
-                    className=" h-86 bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center relative">
+						initial={{ opacity: 0, scale: 0 }}
+						whileInView={{ opacity: 1, scale: 1 }}
+						animate={{ opacity: 1, scale: 1 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.7 }}
+						className=" h-86 bg-white rounded-2xl shadow-lg p-4 flex flex-col items-center justify-center relative">
 						<Image
 							src="/avatar.png"
 							alt="profile"

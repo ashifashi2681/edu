@@ -8,16 +8,9 @@ import SplashScreen from "@/components/common/Splash";
 import SmoothScrollLayout from "@/components/common/SmoothScrollLayout";
 import MouseGradient from "@/components/ui/MouseGradient";
 import { Toaster } from "react-hot-toast";
+import Image from "next/image";
+import Link from "next/link";
 
-// const geistSans = Geist({
-// 	variable: "--font-geist-sans",
-// 	subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-// 	variable: "--font-geist-mono",
-// 	subsets: ["latin"],
-// });
 const poppins = Poppins({
 	variable: "--font-poppins",
 	subsets: ["latin"],
@@ -39,8 +32,22 @@ export default function RootLayout({ children }) {
 				<SplashScreen />
 				<main className="min-h-screen bg-[#566e6e ">
 					<Navbar />
-					<MouseGradient />
+					{/* <MouseGradient /> */}
 					{children}
+					<Link
+						href={
+							"https://wa.me/917034890206?text=Hello, I would like to know more about this platform."
+						}
+						target="_blank"
+						className="fixed bottom-20 right-18 lg:right-16 md:right-10 sm:right-5 animate-bounce">
+						<Image
+							src="/WhatsApp.png"
+							alt="whatsapp icon"
+							width={60}
+							height={60}
+							loading="lazy"
+						/>
+					</Link>
 					<Footer />
 				</main>
 			</body>
