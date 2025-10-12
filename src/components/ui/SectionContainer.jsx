@@ -3,7 +3,7 @@ import * as motion from 'motion/react-client'
 
 function SectionContainer({ children, title, bg }) {
 	return (
-		<section className={`w-full py-12 lg:py-10 md:py-8 sm:py-6 ${bg}`}>
+		<section className={`w-full py-12 lg:py-10 md:py-4 sm:py-3 ${bg}`}>
 			<div className="container">
 				{title && (
 					<motion.div
