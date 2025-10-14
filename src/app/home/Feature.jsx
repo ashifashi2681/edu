@@ -10,7 +10,7 @@ function Feature({ title, para, img, rtl = false }) {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
 					transition={{ duration: 1, delay: 0.2 }}
-					className={`flex-1 lg:flex-initial  overflow-hidden p-4 relative w-full h-[450] md:h-[400] sm:h-[250] ${
+					className={`flex-1 lg:flex-initial  overflow-hidden p-4 relative w-full h-[650] md:h-[500] sm:h-[320] ${
 						rtl && "order-last lg:order-first"
 					}`}>
 				
@@ -19,7 +19,7 @@ function Feature({ title, para, img, rtl = false }) {
 							alt={title}
 							fill
 							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-							className="object-contain "
+							className="object-contain"
 							loading="lazy"
 						/>
 				

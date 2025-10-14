@@ -37,7 +37,7 @@ function Hero() {
 							transition={{ duration: 1.5, delay: 2 }}
 							animate={{ opacity: 1 }}>
 							<RegisterFormWithBtn />
-							<Link href={""} target="_blank">
+							{/* <Link href={""} target="_blank">
 								<Image
 									src={"/playstore.png"}
 									alt="get it on playstore"
@@ -45,7 +45,7 @@ function Hero() {
 									height={65}
 									className="w-30"
 								/>
-							</Link>
+							</Link> */}
 						</motion.div>
 					</div>
 

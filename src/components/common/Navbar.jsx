@@ -12,16 +12,17 @@ function Navbar() {
 		<header className="container py-3 flex items-center justify-between">
 			<MenuButton data={navData} />
 
-			<Link href={"/"}>
-				<div className="border px-5 relative w-auto h-[45px]">
-					<Image
-						src={"/logo.png"}
-						fill
-						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-						className="object-contain"
-						alt="logo"
-					/>
-				</div>
+			<Link
+				href={"/"}
+				className="relative w-[200] lg:w-[180] md:w-[170] sm:w-[160] aspect-[3/1] sm:aspect-[4/1]">
+				<Image
+					src={"/logo-nav.png"}
+					fill
+					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+					className="object-contain"
+					alt="logo"
+					priority
+				/>
 			</Link>
 
 			<nav className="md:hidden">
@@ -30,7 +31,6 @@ function Navbar() {
 				</ul>
 			</nav>
 			<RegisterFormWithBtn />
-			
 		</header>
 	);
 }

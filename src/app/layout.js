@@ -23,13 +23,15 @@ const patric = Patrick_Hand({
 	weight: ["400"],
 });
 
+
+
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body
 				className={` ${poppins.variable} ${patric.variable} font-poppins antialiased`}>
 				<Toaster position="top-center" reverseOrder={true} />
-				<SplashScreen />
+				{/* <SplashScreen /> */}
 				<main className="min-h-screen bg-[#566e6e ">
 					<Navbar />
 					{/* <MouseGradient /> */}
@@ -39,7 +41,7 @@ export default function RootLayout({ children }) {
 							"https://wa.me/919876543210?text=Hello, I would like to know more about this platform."
 						}
 						target="_blank"
-						className="fixed z-50 bottom-20 right-18 lg:right-10 md:right-5 sm:right-0 animate-bounce">
+						className="fixed z-50 bottom-5 right-5 lg:right-10 md:right-5 sm:-right-5 sm:bottom-0 animate-bounce">
 						<Image
 							src="/WhatsApp.png"
 							alt="whatsapp icon"

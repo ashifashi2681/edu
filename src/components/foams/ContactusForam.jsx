@@ -18,7 +18,6 @@ function ContactusForam() {
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-        console.log(formData);
 		try {
 			setIsLoading(true);
 			const res = await fetch(
@@ -55,7 +54,7 @@ function ContactusForam() {
 			}
 		} catch (err) {
 			setIsLoading(false);
-			Toast(err, "error");
+			Toast("Somthing went wrong, Please try again", "error");
 		}
 	};
 	return (

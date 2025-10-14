@@ -59,7 +59,7 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 			}
 		} catch (err) {
 			setIsLoading(false);
-			Toast(err, "error");
+			Toast("Somthing went wrong, Please try again", "error");
 		}
 	};
 	return (
