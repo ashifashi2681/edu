@@ -60,7 +60,7 @@ body {
 }
 
 .container {
-	@apply w-[95%] max-w-[1300px] sm:w-full sm:px-2 mx-auto;
+	@apply w-[95%] max-w-[1300px] sm:w-full sm:px-2 mx-auto overflow-hidden;
 }
 
 .social-icon {
