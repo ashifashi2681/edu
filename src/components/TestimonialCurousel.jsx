@@ -26,8 +26,8 @@ function TestimonialCurousel() {
 							className="w-20 h-20 z-80 rounded-full absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2"
 						/>
 
-						<h3 className="text-md font-[600]">{test?.name}</h3>
-						<p className="text-sm text-gray-500">{test?.subject}</p>
+						<h3 className="text-base font-[600]">{test?.name}</h3>
+						<p className="text-xs text-center text-gray-500">{test?.subject}</p>
 						<Quote className="w-5 h-5 text-cyan-600  rotate-180 my-2" />
 						<p className="text-center text-sm text-gray-400 text-wrap line-clamp-8">
 							{test?.message}

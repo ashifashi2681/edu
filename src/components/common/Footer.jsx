@@ -23,14 +23,19 @@ function Footer() {
 						</Link>
 					</div>
 					<p className="text-sm leading-7 mb-6">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Voluptatibus sint eveniet nemo vitae molestiae amet
-						maiores.
+						Edstaq is Kerala’s fastest-growing online learning
+						platform for Kerala State and CBSE students. With 10K+
+						study materials, 8K+ learners, and 100+ expert tutors,
+						we make learning smarter through live classes,
+						performance tracking, and our neuroscience-powered
+						Neurostaq System.
 					</p>
-					<address>
-						<p className="text-sm my-2">address</p>
-						<p className="text-sm my-2">email</p>
-						<p className="text-sm my-2">phone</p>
+					<address className="border-t">
+						<p className="text-sm my-2">
+							Tirurkkad, Malappuram, Kerala – 679321
+						</p>
+						<p className="text-sm my-2">support@edstaq.com</p>
+						<p className="text-sm my-2">+91 7510 2040 21</p>
 					</address>
 				</section>
 				<section className="sm:mt-6">
@@ -71,15 +76,16 @@ function Footer() {
 				</section>
 				<section className="lg:mt-6">
 					<h6 className="text-base font-[600] text-wh mb-6 lg:mb-5">
-						Connect Us
+						Connect With Us
 					</h6>
 					<p className="text-sm mb-2">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+						Stay connected with Edstaq for updates, offers, and
+						success stories.
 					</p>
 					{/* email input and button */}
-				
-						<FooterForm />
-				
+
+					<FooterForm />
+
 					{/* social media icons */}
 					<div className="flex items-center gap-4">
 						<Link href={"#"}>
@@ -134,7 +140,10 @@ function Footer() {
 				))}
 			</div>
 			<div className="container">
-				<small>&copy; 2025 All rights reserved.</small>
+				<small>
+					&copy; 2025 Edstaq. All Rights Reserved. | Empowering
+					Smarter Learning for Every Student.
+				</small>
 			</div>
 		</footer>
 	);

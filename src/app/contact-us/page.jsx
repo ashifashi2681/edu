@@ -30,18 +30,19 @@ function page() {
 						transition={{ duration: 0.6, delay: 0.2 }}
 						animate={{ opacity: 1, y: 0 }}
 						className="text-sm text-gray-500 leading-7">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit. Soluta itaque dolor debitis sit? Tempore
-						laboriosam ab similique, dolores praesentium ducimus,
-						cum vel et quisquam saepe fugiat! Repudiandae molestias
-						voluptatibus ipsam ea. Laudantium beatae accusantium
-						ipsam iure odit iste, doloribus ipsa sunt natus,
-						architecto eligendi delectus nulla! Nemo sint illum
-						tempore!
+						Let’s Build a Smarter Learning Future Together! <br />
+						<br />
+						Have questions about our online tuition, demo classes,
+						or study materials? The Edstaq team is always happy to
+						help students, parents, and educators find the right
+						learning solution. Whether you want to book a free
+						class, join our tutor network, or become part of our
+						sales team — we’re just a message away. <br />
+						<br /> 📍 Malappuram, Kerala <br/> 📞 +91 7510
+						2040 21 <br/> ✉️ support@edstaq.com
 					</motion.p>
 				</div>
-				<ContactusForam/>
-				
+				<ContactusForam />
 			</div>
 		</SectionContainer>
 	);

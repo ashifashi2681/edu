@@ -21,182 +21,68 @@ export const navData = [
 // footer links
 export const linkSet1 = [
 	{
-		label: "Public Speaking",
-		path: "/course1",
+		label: "Kerala State Syllabus Tuition",
+		path: "#",
 	},
 	{
-		label: "course 2",
-		path: "/course2",
+		label: "CBSE Online Tuition",
+		path: "/#",
 	},
 	{
-		label: "Overview",
-		path: "/course3",
+		label: "Foundation Courses",
+		path: "/#",
 	},
-	{
-		label: "Online Toddlers Program",
-		path: "/course4",
-	},
-	{
-		label: "course 5",
-		path: "/course5",
-	},
-	{
-		label: "Public Speaking",
-		path: "/course6",
-	},
-	{
-		label: "course 7",
-		path: "/course7",
-	},
+	
 ];
 
 
 export const linkSet2 = [
 	{
-		label: "Baby Chef",
-		path: "/career1",
+		label: "Join as an Edstaq Tutor",
+		path: "/#",
 	},
 	{
-		label: "STEM skill development",
-		path: "/career2",
-	},
-	{
-		label: "Robotics ",
-		path: "/career3",
-	},
-	{
-		label: "innovation challenges",
-		path: "/career4",
-	},
-	{
-		label: "Career 5",
-		path: "/career5",
+		label: "Sales Team Opportunities",
+		path: "/#",
 	},
 ];
 
 export const extraLinks = [
 	{
-		label: "AI for Students",
-		path: "/career5",
+		label: "Online Tuition in Kerala ",
+		path: "/#",
 	},
 	{
-		label: "Foundation in French",
-		path: "/career5",
+		label: "Online Tuition in Kerala ",
+		path: "/#",
 	},
 	{
-		label: "online course",
-		path: "/career5",
+		label: "Kerala State Syllabus Study Materials ",
+		path: "/#",
 	},
 	{
-		label: "Extra link",
-		path: "/career5",
+		label: "One-on-One Tuition ",
+		path: "/#",
 	},
 	{
-		label: "Public Speaking",
-		path: "/career5",
+		label: "AI-Powered Learning ",
+		path: "/#",
 	},
 	{
-		label: "complex robot designs",
-		path: "/career5",
+		label: "Neurostaq ",
+		path: "/#",
 	},
 	{
-		label: "Extra link",
-		path: "/career5",
+		label: "Edstaq App ",
+		path: "/#",
 	},
 	{
-		label: "UKG Online Class",
-		path: "/career5",
+		label: "Online Learning Platform India ",
+		path: "/#",
 	},
 	{
-		label: "Extra link",
-		path: "/career5",
+		label: "Join as Tutor",
+		path: "/#",
 	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Public Speaking",
-		path: "/career5",
-	},
-	{
-		label: "Baby Chef",
-		path: "/career5",
-	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Public Speaking",
-		path: "/career5",
-	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Baby Chef",
-		path: "/career5",
-	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Public Speaking",
-		path: "/career5",
-	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Baby Chef",
-		path: "/career5",
-	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Extra link",
-		path: "/career5",
-	},
-	{
-		label: "Public Speaking",
-		path: "/career5",
-	},
-	{
-		label: "Baby Chef",
-		path: "/career5",
-	},
+	
 ];

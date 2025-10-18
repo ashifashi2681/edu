@@ -18,18 +18,18 @@ function Hero() {
 							transition={{ duration: 1.5 }}
 							animate={{ opacity: 1, y: 0 }}
 							className="text-xxl font-[600] leading-15 lg:leading-13 md:leading-12 md:text-center mb-6 hero-title">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit.
+							Empowering Students with Smarter Learning & Live
+							Tuition
 						</motion.h1>
 						<motion.p
 							initial={{ opacity: 0, y: 50 }}
 							transition={{ duration: 1.5, delay: 1.2 }}
 							animate={{ opacity: 1, y: 0 }}
 							className="text-sm leading-7 mb-6 md:text-center">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Perferendis et quas earum omnis illo laborum
-							odit, amet ducimus alias animi odio adipisci
-							doloribus molestiae recusandae!
+							Join Kerala’s most trusted online learning network —
+							connecting students, teachers, and study materials
+							in one place. Learn better, remember longer, and
+							achieve more with Edstaq.
 						</motion.p>
 						<motion.div
 							className="flex md:justify-center space-x-4"

@@ -66,14 +66,31 @@ function AboutUs() {
 						transition={{ duration: 0.6, delay: 0.2 }}
 						animate={{ opacity: 1, y: 0 }}
 						className="text-sm text-gray-500 leading-7">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit. Soluta itaque dolor debitis sit? Tempore
-						laboriosam ab similique, dolores praesentium ducimus,
-						cum vel et quisquam saepe fugiat! Repudiandae molestias
-						voluptatibus ipsam ea. Laudantium beatae accusantium
-						ipsam iure odit iste, doloribus ipsa sunt natus,
-						architecto eligendi delectus nulla! Nemo sint illum
-						tempore!
+						🚀 Empowering Students to Learn Smarter, Faster, and
+						Better Welcome to Edstaq, Kerala’s leading online
+						tuition and learning platform designed to help students
+						excel in academics and achieve long-term success.
+						Founded in 2020, Edstaq stands for Education Students
+						Acquisition — a mission-driven initiative to connect
+						learners with expert tutors, innovative learning tools,
+						and high-quality study materials.
+						<br />
+						<br />
+						At Edstaq, we believe that every student deserves
+						personalized, affordable, and effective learning
+						support. Whether your child follows the Kerala State
+						Syllabus or CBSE, our platform ensures they receive the
+						right guidance through live tuition classes, smart
+						revision tools, and scientifically designed memory
+						techniques.
+						<br />
+						<br />
+						🎯 <b>Our Mission</b> <br /> To empower students at
+						every stage of their educational journey by delivering
+						accessible learning experiences, connecting them with
+						qualified educators, and providing quality academic
+						resources that help them grow confidently — all through
+						a technology-driven ecosystem.
 					</motion.p>
 					<motion.div
 						initial={{ opacity: 0 }}

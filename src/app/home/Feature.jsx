@@ -4,22 +4,23 @@ import * as motion from "motion/react-client";
 function Feature({ title, para, img, rtl = false }) {
 	return (
 		<SectionContainer>
-			<div className="flex gap-5 items-center lg:flex-col">
+			<div className="flex gap-5 items-start lg:flex-col">
 				<motion.div
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
 					transition={{ duration: 1, delay: 0.2 }}
-					className={`flex-1 lg:flex-initial  overflow-hidden p-4 relative w-full h-[650] md:h-[500] sm:h-[320] ${
+					className={`flex-1 lg:flex-initial p-4  ${
 						rtl && "order-last lg:order-first"
 					}`}>
 				
 						<Image
 							src={img}
 							alt={title}
-							fill
+							width={900}
+							height={600}
 							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-							className="object-contain"
+							className="object-contain rounded-2xl md:rounded-xl sm:rounded-lg"
 							loading="lazy"
 						/>
 				

@@ -6,7 +6,7 @@ import * as motion from "motion/react-client";
 function Testimonials() {
 	
 	return (
-		<SectionContainer title={"Testimonials"}>
+		<SectionContainer title={"What Our Students and Parents Say"}>
 			<div className="flex flex-col items-center mb-3">
 				<motion.p
 					initial={{ opacity: 0 }}
@@ -14,10 +14,8 @@ function Testimonials() {
 					whileInView={{ opacity: 1 }}
 					viewport={{ once: true }}
 					className="text-sm w-4/6 text-center">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Minus ipsam odio nisi, itaque distinctio molestias soluta
-					voluptas culpa maiores a iure dicta animi, assumenda
-					cupiditate.
+					Thousands of learners and parents across Kerala trust Edstaq
+					to make learning simple, personalized, and result-driven.
 				</motion.p>
 			</div>
 			<TestimonialCurousel />
