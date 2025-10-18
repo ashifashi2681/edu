@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
 					{children}
 					<Link
 						href={
-							"https://wa.me/919876543210?text=Hello, I would like to know more about this platform."
+							"https://wa.me/917510204021?text=Hello, I would like to know more about this platform."
 						}
 						target="_blank"
 						className="fixed z-50 bottom-5 right-5 lg:right-10 md:right-5 sm:-right-5 sm:bottom-0 animate-bounce">
