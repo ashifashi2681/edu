@@ -7,7 +7,7 @@ import Testimonials from "./home/Testimonials";
 
 
 export const metadata = {
-	title: "EduStaq | Home",
+	title: "EDSTAQ | Home",
 	description: "knowledg at your fingertips",
 };
 export default function Home() {

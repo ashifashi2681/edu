@@ -1,9 +1,5 @@
 export const faqsData = [
-	{
-		qt: "What is Edstaq and how does it help students?",
-		ans: "Edstaq is a leading online tuition and learning platform for Kerala State and CBSE students. It connects learners with experienced online tutors, offering 10K+ study materials, live interactive classes, and personalized academic support. Designed to improve exam performance, concept clarity, and confidence, Edstaq ensures every student receives high-quality education from the comfort of home.",
-	},
-
+	
 	{
 		qt: "What is Edstaq and how does it help students?",
 		ans: "Edstaq is a leading online tuition and learning platform for Kerala State and CBSE students. It connects learners with experienced online tutors, offering 10K+ study materials, live interactive classes, and personalized academic support. Designed to improve exam performance, concept clarity, and confidence, Edstaq ensures every student receives high-quality education from the comfort of home.",

@@ -26,7 +26,7 @@ function Highlights() {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}>
 					<HiglightCard
-						title={"📚 10K+"}
+						title={"10K+"}
 						sub={"Study Materials"}
 						desc={
 							"Access digital notes, question papers, and learning resources created by expert tutors for Kerala State and CBSE syllabuses."
@@ -39,7 +39,7 @@ function Highlights() {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}>
 					<HiglightCard
-						title={"👥 8K+"}
+						title={"8K+"}
 						sub={"Edstaq Users"}
 						desc={
 							"Students and parents already discovering smarter, faster, and more personalized learning experiences with Edstaq."
@@ -52,7 +52,7 @@ function Highlights() {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}>
 					<HiglightCard
-						title={"👩‍🏫 100+"}
+						title={"100+"}
 						sub={"Trusted Tutors"}
 						desc={
 							"Experienced teachers offering live classes, test preparation, and one-on-one support in English and Malayalam."

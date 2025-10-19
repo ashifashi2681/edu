@@ -3,7 +3,7 @@ import SectionContainer from "@/components/ui/SectionContainer";
 import * as motion from "motion/react-client";
 
 export const metadata = {
-	title: "EduStaq | Contact us",
+	title: "EDSTAQ | Contact us",
 	description: "knowledg at your fingertips",
 };
 function page() {
@@ -38,8 +38,9 @@ function page() {
 						learning solution. Whether you want to book a free
 						class, join our tutor network, or become part of our
 						sales team — we’re just a message away. <br />
-						<br /> 📍 Malappuram, Kerala <br/> 📞 +91 7510
-						2040 21 <br/> ✉️ support@edstaq.com
+						<br /> 📍 green valley, Tirurkkad, Malappuram, Kerala -
+						679321
+						<br /> 📞 +91 7510 2040 21 <br /> ✉️ edstaq@gmail.com
 					</motion.p>
 				</div>
 				<ContactusForam />

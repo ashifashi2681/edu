@@ -49,40 +49,12 @@ export const linkSet2 = [
 
 export const extraLinks = [
 	{
-		label: "Online Tuition in Kerala ",
-		path: "/#",
+		label: "About Us ",
+		path: "/about-us",
 	},
 	{
-		label: "Online Tuition in Kerala ",
-		path: "/#",
-	},
-	{
-		label: "Kerala State Syllabus Study Materials ",
-		path: "/#",
-	},
-	{
-		label: "One-on-One Tuition ",
-		path: "/#",
-	},
-	{
-		label: "AI-Powered Learning ",
-		path: "/#",
-	},
-	{
-		label: "Neurostaq ",
-		path: "/#",
-	},
-	{
-		label: "Edstaq App ",
-		path: "/#",
-	},
-	{
-		label: "Online Learning Platform India ",
-		path: "/#",
-	},
-	{
-		label: "Join as Tutor",
-		path: "/#",
+		label: "Contact Us",
+		path: "/contact-us",
 	},
 	
 ];

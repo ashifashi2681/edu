@@ -4,7 +4,7 @@ import React from 'react'
 import * as motion from 'motion/react-client'
 
 export const metadata = {
-	title: "EduStaq | About us",
+	title: "EDSTAQ | About us",
 	description: "knowledg at your fingertips",
 };
 function AboutUs() {

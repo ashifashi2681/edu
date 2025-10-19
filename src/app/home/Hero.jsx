@@ -32,7 +32,7 @@ function Hero() {
 							achieve more with Edstaq.
 						</motion.p>
 						<motion.div
-							className="flex md:justify-center space-x-4"
+							className="flex md:justify-center space-x-4 md:pb-3"
 							initial={{ opacity: 0 }}
 							transition={{ duration: 1.5, delay: 2 }}
 							animate={{ opacity: 1 }}>

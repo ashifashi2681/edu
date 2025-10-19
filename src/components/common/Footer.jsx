@@ -2,7 +2,7 @@ import { extraLinks, linkSet1, linkSet2 } from "@/lib/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import FooterForm from "../foams/FooterForm";
 
 function Footer() {
@@ -24,17 +24,15 @@ function Footer() {
 					</div>
 					<p className="text-sm leading-7 mb-6">
 						Edstaq is Kerala’s fastest-growing online learning
-						platform for Kerala State and CBSE students. With 10K+
-						study materials, 8K+ learners, and 100+ expert tutors,
-						we make learning smarter through live classes,
-						performance tracking, and our neuroscience-powered
-						Neurostaq System.
+						platform for Kerala State and CBSE students. we make
+						learning smarter through live classes, performance
+						tracking, and our neuroscience-powered Neurostaq System.
 					</p>
 					<address className="border-t">
 						<p className="text-sm my-2">
-							Tirurkkad, Malappuram, Kerala – 679321
+							green valley, Tirurkkad, Malappuram, Kerala - 679321
 						</p>
-						<p className="text-sm my-2">support@edstaq.com</p>
+						<p className="text-sm my-2">edstaq@gmail.com</p>
 						<p className="text-sm my-2">+91 7510 2040 21</p>
 					</address>
 				</section>
@@ -110,7 +108,7 @@ function Footer() {
 							/>
 						</Link>
 						<Link href={"#"}>
-							<Youtube
+							<Twitter
 								role="icon"
 								aria-label="Youtube icon"
 								className="social-icon"
