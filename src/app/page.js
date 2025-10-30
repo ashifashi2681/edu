@@ -5,11 +5,6 @@ import Hero from "./home/Hero";
 import Highlights from "./home/Highlights";
 import Testimonials from "./home/Testimonials";
 
-
-export const metadata = {
-	title: "EDSTAQ | Home",
-	description: "knowledg at your fingertips",
-};
 export default function Home() {
 	
 	return (

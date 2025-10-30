@@ -22,28 +22,23 @@ export const navData = [
 export const linkSet1 = [
 	{
 		label: "Kerala State Syllabus Tuition",
-		path: "#",
+		path: "/contact-us",
 	},
 	{
 		label: "CBSE Online Tuition",
-		path: "/#",
+		path: "/contact-us",
 	},
-	{
-		label: "Foundation Courses",
-		path: "/#",
-	},
-	
 ];
 
 
 export const linkSet2 = [
 	{
 		label: "Join as an Edstaq Tutor",
-		path: "/#",
+		path: "https://forms.gle/jQAxMtrTQgrAtoWZ6",
 	},
 	{
 		label: "Sales Team Opportunities",
-		path: "/#",
+		path: "https://forms.gle/ogn9no4wu6ShZG1JA",
 	},
 ];
 

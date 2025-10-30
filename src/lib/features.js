@@ -1,7 +1,7 @@
 export const featrues = [
 	{
 		title: "Complete Brain Engagement",
-		para: "At Edstaq, learning goes beyond textbooks — it’s about engaging the whole brain. Our Neurostaq Learning System uses proven neuroscience-based techniques that help students think smarter, focus better, and retain concepts longer. By combining visual, auditory, and interactive methods, we make every session memorable and effective. Students learn faster, perform better, and build strong academic confidence. Experience the power of brain-boosted learning with Edstaq.",
+		para: `At Edstaq, learning goes beyond textbooks — it’s about engaging the whole brain. Our <b>Neurostaq</b> Learning System uses proven neuroscience-based techniques that help students think smarter, focus better, and retain concepts longer. By combining visual, auditory, and interactive methods, we make every session memorable and effective. Students learn faster, perform better, and build strong academic confidence. Experience the power of brain-boosted learning with Edstaq.`,
 		img: "/features/brain encagement.png",
 	},
 	{

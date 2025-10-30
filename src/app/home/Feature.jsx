@@ -34,7 +34,7 @@ function Feature({ title, para, img, rtl = false }) {
 					<h2 className="text-lg font-[600] mb-2 border-l-5 pl-3 border-l-bl-100">
 						{title}
 					</h2>
-					<p className="text-sm leading-7">{para}</p>
+					<p className="text-sm leading-7" dangerouslySetInnerHTML={{__html: para}}></p>
 				</motion.div>
 			</div>
 		</SectionContainer>

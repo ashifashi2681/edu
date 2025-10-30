@@ -2,11 +2,13 @@ import CustomButton from '@/components/ui/CustomButton';
 import SectionContainer from '@/components/ui/SectionContainer';
 import React from 'react'
 import * as motion from 'motion/react-client'
+import { meta } from '@/utils/metadata';
 
-export const metadata = {
-	title: "EDSTAQ | About us",
-	description: "knowledg at your fingertips",
-};
+export const metadata = meta(
+	"About Us",
+	"Track your child’s focus, subject-wise progress, and learning patterns using Neurostaq’s AI dashboard. Gain real-time insights for better academic support.",
+	"about-us"
+);
 function AboutUs() {
   return (
 		<SectionContainer>
@@ -66,7 +68,7 @@ function AboutUs() {
 						transition={{ duration: 0.6, delay: 0.2 }}
 						animate={{ opacity: 1, y: 0 }}
 						className="text-sm text-gray-500 leading-7">
-						🚀 Empowering Students to Learn Smarter, Faster, and
+						Empowering Students to Learn Smarter, Faster, and
 						Better Welcome to Edstaq, Kerala’s leading online
 						tuition and learning platform designed to help students
 						excel in academics and achieve long-term success.

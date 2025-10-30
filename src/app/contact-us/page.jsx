@@ -1,11 +1,14 @@
 import ContactusForam from "@/components/foams/ContactusForam";
 import SectionContainer from "@/components/ui/SectionContainer";
+import { meta } from "@/utils/metadata";
 import * as motion from "motion/react-client";
 
-export const metadata = {
-	title: "EDSTAQ | Contact us",
-	description: "knowledg at your fingertips",
-};
+export const metadata = meta(
+	"Contact Us",
+	"Register on the Edstaq website or app to book your free one-on-one demo class with expert tutors. Experience interactive online learning before you enroll.",
+	"contact-us"
+);
+
 function page() {
 	return (
 		<SectionContainer>

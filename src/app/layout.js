@@ -10,6 +10,7 @@ import MouseGradient from "@/components/ui/MouseGradient";
 import { Toaster } from "react-hot-toast";
 import Image from "next/image";
 import Link from "next/link";
+import { SITE } from "@/lib/seo-config";
 
 const poppins = Poppins({
 	variable: "--font-poppins",
@@ -23,7 +24,61 @@ const patric = Patrick_Hand({
 	weight: ["400"],
 });
 
-
+export const metadata = {
+	metadataBase: new URL(SITE.url),
+	title: {
+		default: `${SITE.name} - Empowering Students with Smarter Learning & Live Tuition`,
+		template: `%s | ${SITE.name}`,
+	},
+	description: SITE.desc,
+	alternates: {
+		canonical: "/",
+	},
+	keywords: [
+		"online tuition Kerala",
+		"CBSE tuition classes",
+		"Kerala State syllabus tuition",
+		"best online learning platform",
+		"live classes for students",
+		"Edstaq",
+	],
+	openGraph: {
+		title: SITE.name,
+		description: SITE.desc,
+		url: SITE.url,
+		siteName: SITE.name,
+		images: [
+			{
+				url: `${SITE.url}/api/og?title=${encodeURIComponent(
+					SITE.name
+				)}&description=${encodeURIComponent(SITE.desc)}`,
+				width: 1200,
+				height: 630,
+				alt: SITE.name,
+			},
+		],
+		locale: "en_US",
+		type: "website",
+	},
+	twitter: {
+		card: "summary_large_image",
+		title: SITE.name,
+		description: SITE.desc,
+		creator: SITE.twitter,
+		images: [
+			`${SITE.url}/api/og?title=${encodeURIComponent(
+				SITE.name
+			)}&description=${encodeURIComponent(SITE.desc)}`,
+		],
+	},
+	icons: {
+		icon: "/favicon.ico",
+	},
+	robots: {
+		index: true,
+		follow: true,
+	},
+};
 
 export default function RootLayout({ children }) {
 	return (

@@ -211,12 +211,15 @@ function RegisterFormModal({ isModalOpen, setIsModalOpen }) {
 						className="size-32 rounded-full bg-radial-[at_25%_25%] from-white to-[#6C5BDF] to-75% shadow-lg absolute bottom-3 right-5 opacity-50"></motion.div>
 					<div className="absolute pl-14 pr-3 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full join-title md:hidden">
 						<h2 className="text-xl font-[600] text-center">
-							We welcome you!
+							Welcome to Edstaq – Empowering Learning Across
+							Kerala!
 						</h2>
 						<p className="text-center !text-bk">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Corporis blanditiis aliquid consectetur? Magni
-							ratione fugit consequuntur.
+							Join our growing community of 8,000+ learners, 100+
+							tutors, and a passionate sales team. Whether you
+							want to learn, teach, or grow with us, Edstaq
+							connects you to real opportunities in education and
+							career development.
 						</p>
 					</div>
 				</motion.div>

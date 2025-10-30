@@ -6,7 +6,7 @@ export const faqsData = [
 	},
 	{
 		qt: "What is Neurostaq?",
-		ans: "Neurostaq is Edstaq’s AI-powered learning intelligence system that uses neuroscience-based learning techniques to improve memory, focus, and understanding. It analyzes each student’s study behavior, identifies weak areas, and provides personalized insights to help them retain knowledge faster, focus better, and perform better in exams. In short, Neurostaq helps students learn smarter—not harder.",
+		ans: "Neurostaq is Edstaq’s learning intelligence system that uses neuroscience-based learning techniques to improve memory, focus, and understanding. It analyzes each student’s study behavior, identifies weak areas, and provides personalized insights to help them retain knowledge faster, focus better, and perform better in exams. In short, Neurostaq helps students learn smarter—not harder.",
 	},
 	{
 		qt: "How are Edstaq tutors selected?",
@@ -29,7 +29,7 @@ export const faqsData = [
 		ans: "Neurostaq includes a smart progress dashboard where parents can track subject-wise improvement, attention levels, and topic completion rates. This data-driven insight helps parents understand how well their child is performing and where extra support may be needed.",
 	},
 	{
-		qt: "How is Neurostaq different from normal tuition apps?",
-		ans: "Unlike regular tuition apps that focus only on teaching lessons, Neurostaq combines neuroscience, AI, and psychology to improve how the brain learns. It enhances focus, reduces study stress, and builds long-term memory. That means students not only score higher marks but also understand and retain concepts deeply, ensuring true learning success.",
+		qt: "How is Neurostaq different from normal tuition?",
+		ans: "Unlike regular tuition that focus only on teaching lessons, Neurostaq combines neuroscience and psychology to improve how the brain learns. It enhances focus, reduces study stress, and builds long-term memory. That means students not only score higher marks but also understand and retain concepts deeply, ensuring true learning success.",
 	},
 ];

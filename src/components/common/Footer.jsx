@@ -86,28 +86,31 @@ function Footer() {
 
 					{/* social media icons */}
 					<div className="flex items-center gap-4">
-						<Link href={"#"}>
+						<Link href={"https://www.instagram.com/edstaq"} target="_blank">
 							<Instagram
 								role="icon"
 								aria-label="Instagram icon"
 								className="social-icon"
 							/>
 						</Link>
-						<Link href={"#"}>
+						<Link
+							href={
+								"https://www.facebook.com/profile.php?id=61577742274256"
+							} target="_blank">
 							<Facebook
 								role="icon"
 								aria-label="Facebook icon"
 								className="social-icon"
 							/>
 						</Link>
-						<Link href={"#"}>
+						<Link href={"https://www.linkedin.com/company/edstaq/"} target="_blank">
 							<Linkedin
 								role="icon"
 								aria-label="Linkedin icon"
 								className="social-icon"
 							/>
 						</Link>
-						<Link href={"#"}>
+						<Link href={"https://x.com/edstaq?s=21"} target="_blank">
 							<Twitter
 								role="icon"
 								aria-label="Youtube icon"
@@ -115,7 +118,11 @@ function Footer() {
 							/>
 						</Link>
 					</div>
-					<Link href={""} target="_blank">
+					<Link
+						href={
+							"https://play.google.com/store/apps/details?id=com.asrgroup.cuguide"
+						}
+						target="_blank">
 						<Image
 							src={"/playstore.png"}
 							alt="get it on playstore"
