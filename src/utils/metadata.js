@@ -9,10 +9,10 @@ export const meta = (title, description,url) => {
 		},
 
 		openGraph: {
-			title,
+			title: `${title} - ${SITE.name}`,
 			description,
 			url: `${SITE.url}${url}`,
-			siteName: SITE.name,
+			siteName: SITE.siteName,
 			images: [
 				{
 					url: `${SITE.url}/api/og?title=${encodeURIComponent(
@@ -20,7 +20,7 @@ export const meta = (title, description,url) => {
 					)}&description=${encodeURIComponent(description)}`,
 					width: 1200,
 					height: 630,
-					alt: `${SITE.name}${title}`,
+					alt: `${SITE.name}-${title}`,
 				},
 			],
 			locale: "en_US",
@@ -29,7 +29,7 @@ export const meta = (title, description,url) => {
 
 		twitter: {
 			card: "summary_large_image",
-			title: `${title}${SITE.name}`,
+			title: `${title} - ${SITE.name}`,
 			description,
 			images: [
 				`${SITE.url}/api/og?title=${encodeURIComponent(
@@ -40,7 +40,7 @@ export const meta = (title, description,url) => {
 
 		robots: {
 			index: true,
-			follow: true, 
+			follow: true,
 			nocache: false,
 		},
 

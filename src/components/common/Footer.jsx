@@ -2,8 +2,10 @@ import { extraLinks, linkSet1, linkSet2 } from "@/lib/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import FooterForm from "../foams/FooterForm";
+import { FaInstagram } from "react-icons/fa";
+import { FiFacebook, FiLinkedin } from "react-icons/fi";
+import { FaThreads, FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
 	return (
@@ -85,38 +87,55 @@ function Footer() {
 					<FooterForm />
 
 					{/* social media icons */}
-					<div className="flex items-center gap-4">
-						<Link href={"https://www.instagram.com/edstaq"} target="_blank">
-							<Instagram
+					<div className="flex items-center gap-5">
+						<Link
+							href={"https://www.instagram.com/edstaq"}
+							target="_blank">
+							<FaInstagram
+								className="social-icon"
 								role="icon"
 								aria-label="Instagram icon"
-								className="social-icon"
 							/>
 						</Link>
 						<Link
 							href={
 								"https://www.facebook.com/profile.php?id=61577742274256"
-							} target="_blank">
-							<Facebook
+							}
+							target="_blank">
+							<FiFacebook
 								role="icon"
 								aria-label="Facebook icon"
 								className="social-icon"
 							/>
 						</Link>
-						<Link href={"https://www.linkedin.com/company/edstaq/"} target="_blank">
-							<Linkedin
+						<Link
+							href={"https://www.linkedin.com/company/edstaq/"}
+							target="_blank">
+							<FiLinkedin
 								role="icon"
 								aria-label="Linkedin icon"
 								className="social-icon"
 							/>
 						</Link>
-						<Link href={"https://x.com/edstaq?s=21"} target="_blank">
-							<Twitter
+						<Link
+							href={"https://x.com/edstaq?s=21"}
+							target="_blank">
+							<FaXTwitter
 								role="icon"
-								aria-label="Youtube icon"
+								aria-label="Twitter icon"
 								className="social-icon"
 							/>
 						</Link>
+						<Link
+							href={"https://www.threads.com/@edstaq?igshid=NTc4MTIwNjQ2YQ=="}
+							target="_blank">
+							<FaThreads
+								role="icon"
+								aria-label="Thread icon"
+								className="social-icon"
+							/>
+						</Link>
+				
 					</div>
 					<Link
 						href={

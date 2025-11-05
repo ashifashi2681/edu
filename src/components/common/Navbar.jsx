@@ -7,7 +7,6 @@ import MenuButton from "../ui/MenuButton";
 import RegisterFormWithBtn from "../foams/RegisterFormWithBtn";
 
 function Navbar() {
-	
 	return (
 		<header className="container py-3 flex items-center justify-between">
 			<MenuButton data={navData} />

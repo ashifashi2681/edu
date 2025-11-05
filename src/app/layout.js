@@ -31,6 +31,7 @@ export const metadata = {
 		template: `%s | ${SITE.name}`,
 	},
 	description: SITE.desc,
+	applicationName: SITE.siteName,
 	alternates: {
 		canonical: "/",
 	},
@@ -42,11 +43,14 @@ export const metadata = {
 		"live classes for students",
 		"Edstaq",
 	],
+	verification: {
+		google: "ellmOUzPR6ldQ_EK-E75TexiM3bmRxJGQj2N_kYm6Do",
+	},
 	openGraph: {
 		title: SITE.name,
 		description: SITE.desc,
 		url: SITE.url,
-		siteName: SITE.name,
+		siteName: SITE.siteName,
 		images: [
 			{
 				url: `${SITE.url}/api/og?title=${encodeURIComponent(
@@ -71,9 +75,9 @@ export const metadata = {
 			)}&description=${encodeURIComponent(SITE.desc)}`,
 		],
 	},
-	icons: {
-		icon: "/favicon.ico",
-	},
+	// icons: {
+	// 	icon: "/favicon.ico",
+	// },
 	robots: {
 		index: true,
 		follow: true,

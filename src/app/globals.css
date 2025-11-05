@@ -64,7 +64,7 @@ body {
 }
 
 .social-icon {
-	@apply w-7 h-7 border-b-3 hover:text-bl-25 transition duration-300;
+	@apply size-7 border-b-3 hover:text-bl-25 transition duration-300;
 }
 
 .footer-link {
@@ -105,12 +105,20 @@ body {
 
 /* hero title */
 .hero-title {
-	background: radial-gradient(ellipse farthest-corner at center center, #16B9FF 0%, #051ACF 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+	background: radial-gradient(
+		ellipse farthest-corner at center center,
+		#16b9ff 0%,
+		#051acf 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .join-title {
-	background: radial-gradient(ellipse farthest-corner at center center, #0792ce 0%, #021199 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+	background: radial-gradient(
+		ellipse farthest-corner at center center,
+		#0792ce 0%,
+		#021199 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
